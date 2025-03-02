@@ -48,3 +48,23 @@ CREATE TABLE Varaus (
     FOREIGN KEY (RekNro) REFERENCES Auto(RekNro)
 );
 
+
+INSERT INTO Sijainti VALUES  
+    (,,,),
+    (,,,);
+
+INSERT INTO Myyja VALUES 
+    (,,,,,,), 
+    (,,,,,,);
+
+INSERT INTO Auto VALUES 
+    (,,,,,,), 
+    (,,,,,,);
+
+INSERT INTO Asiakas VALUES  
+    (,,,,,), 
+    (,,,,,);
+
+INSERT INTO Varaus VALUES
+    (,,,,,), 
+    (,,,,,);
