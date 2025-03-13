@@ -49,22 +49,50 @@ CREATE TABLE Varaus (
 );
 
 
-INSERT INTO Sijainti VALUES  
-    (,,,),
-    (,,,);
+INSERT INTO Sijainti (SijaintiID, Kaupunki, Maa) VALUES
+(1, 'Helsinki', 'Suomi'),
+(2, 'Tampere', 'Suomi'),
+(3, 'Turku', 'Suomi');
 
-INSERT INTO Myyja VALUES 
-    (,,,,,,), 
-    (,,,,,,);
+INSERT INTO Myyja (MyyjaID, SijaintiID, Etunimi, Sukunimi, SPosti, PuhNro) VALUES
+(1, 1, 'Matti', 'Meikäläinen', 'matti.meikalainen@example.com', '0401234567'),
+(2, 2, 'Liisa', 'Virtanen', 'liisa.virtanen@example.com', '0402345678'),
+(3, 3, 'Pekka', 'Korhonen', 'pekka.korhonen@example.com', '0403456789'),
+(4, 1, 'Antti', 'Räsänen', 'antti.rasanen@example.com', '0404567890'),
+(5, 2, 'Maija', 'Lehtinen', 'maija.lehtinen@example.com', '0405678901');
 
-INSERT INTO Auto VALUES 
-    (,,,,,,), 
-    (,,,,,,);
+INSERT INTO Auto (RekNro, Merkki, Malli, Vapaa, SijaintiID, MyyjaID) VALUES
+('ABC-123', 'Toyota', 'Corolla', 1, 1, 1),
+('XYZ-789', 'Volkswagen', 'Golf', 0, 2, 2),
+('JKL-456', 'Ford', 'Focus', 1, 3, 3),
+('DEF-321', 'Nissan', 'Qashqai', 1, 1, 4),
+('GHI-654', 'BMW', '320i', 0, 2, 5),
+('MNO-987', 'Mercedes', 'C200', 1, 3, 3),
+('PQR-741', 'Audi', 'A4', 1, 1, 1),
+('STU-852', 'Skoda', 'Octavia', 0, 2, 2);
 
-INSERT INTO Asiakas VALUES  
-    (,,,,,), 
-    (,,,,,);
+INSERT INTO Asiakas (AsiakasID, Etunimi, Sukunimi, SPosti, PuhNro) VALUES
+(1, 'Anna', 'Laakso', 'anna.laakso@example.com', '0451234567'),
+(2, 'Janne', 'Mäkinen', 'janne.makinen@example.com', '0452345678'),
+(3, 'Emilia', 'Hakala', 'emilia.hakala@example.com', '0453456789'),
+(4, 'Timo', 'Heikkinen', 'timo.heikkinen@example.com', '0454567890'),
+(5, 'Laura', 'Koskinen', 'laura.koskinen@example.com', '0455678901'),
+(6, 'Sami', 'Järvinen', 'sami.jarvinen@example.com', '0456789012'),
+(7, 'Heli', 'Salminen', 'heli.salminen@example.com', '0457890123');
 
-INSERT INTO Varaus VALUES
-    (,,,,,), 
-    (,,,,,);
+INSERT INTO Varaus (VarausID, AsiakasID, RekNro, StartTime, EndTime) VALUES
+(1, 3, 'STU-852', '2024-03-18 14:00:00', '2024-03-22 12:00:00'),
+(2, 5, 'MNO-987', '2024-03-25 10:00:00', '2024-03-28 12:00:00'),
+(3, 2, 'PQR-741', '2024-04-01 08:00:00', '2024-04-03 18:00:00'),
+(4, 6, 'XYZ-789', '2024-04-05 09:30:00', '2024-04-10 16:00:00'),
+(5, 1, 'PQR-741', '2024-04-10 09:00:00', '2024-04-15 14:00:00'),
+(6, 3, 'JKL-456', '2024-05-01 10:00:00', '2024-05-07 13:00:00'),
+(7, 4, 'ABC-123', '2024-06-01 08:30:00', '2024-06-06 16:30:00'),
+(8, 7, 'GHI-654', '2024-06-07 09:00:00', '2024-06-12 14:00:00'),
+(9, 2, 'DEF-321', '2024-06-20 08:30:00', '2024-06-25 12:00:00'),
+(10, 3, 'MNO-987', '2024-07-01 07:45:00', '2024-07-05 18:00:00'),
+(11, 4, 'JKL-456', '2024-08-03 10:00:00', '2024-08-08 16:00:00'),
+(12, 5, 'ABC-123', '2024-09-15 09:00:00', '2024-09-20 14:30:00'),
+(13, 6, 'STU-852', '2024-10-05 11:00:00', '2024-10-10 13:00:00'),
+(14, 7, 'GHI-654', '2024-11-01 08:00:00', '2024-11-06 17:00:00'),
+(15, 2, 'MNO-987', '2024-12-10 09:30:00', '2024-12-15 15:30:00');
