@@ -78,7 +78,9 @@ INSERT INTO Asiakas (AsiakasID, Etunimi, Sukunimi, SPosti, PuhNro) VALUES
 (4, 'Timo', 'Heikkinen', 'timo.heikkinen@example.com', '0454567890'),
 (5, 'Laura', 'Koskinen', 'laura.koskinen@example.com', '0455678901'),
 (6, 'Sami', 'Järvinen', 'sami.jarvinen@example.com', '0456789012'),
-(7, 'Heli', 'Salminen', 'heli.salminen@example.com', '0457890123');
+(7, 'Heli', 'Salminen', 'heli.salminen@example.com', '0457890123'),
+(8, 'Mikko', 'Mallikas', 'mikko.mallikas@example.com', '0457890323'),
+(9, 'Atte', 'Liikanen', 'Atte.liikanen@example.com', '0457390123');
 
 INSERT INTO Varaus (VarausID, AsiakasID, RekNro, StartTime, EndTime) VALUES
 (1, 3, 'STU-852', '2024-03-18 14:00:00', '2024-03-18 17:00:00'),
